@@ -1,0 +1,45 @@
+============================================================
+SalesCode AI – Recapture Detector  |  Training Report
+============================================================
+
+Per-signal statistics
+----------------------------------------
+  fft_peaks             real μ=0.450 σ=0.046   screen μ=0.512 σ=0.061
+  screen_luminance      real μ=0.215 σ=0.157   screen μ=0.328 σ=0.220
+  color_gamut           real μ=0.225 σ=0.199   screen μ=0.373 σ=0.280
+  channel_decorrelation  real μ=0.146 σ=0.235   screen μ=0.280 σ=0.343
+  halftone              real μ=0.469 σ=0.209   screen μ=0.471 σ=0.212
+  glare_blob            real μ=0.235 σ=0.288   screen μ=0.228 σ=0.260
+  double_compression    real μ=0.346 σ=0.082   screen μ=0.287 σ=0.092
+  edge_density          real μ=0.159 σ=0.202   screen μ=0.400 σ=0.347
+
+Optimal weights
+----------------------------------------
+  fft_peaks             0.7409
+  screen_luminance      0.0000
+  color_gamut           0.0304
+  channel_decorrelation  0.0000
+  halftone              0.0655
+  glare_blob            0.0000
+  double_compression    0.0103
+  edge_density          0.1529
+
+Threshold τ              :  0.4500
+Cross-validated balanced :  0.9012
+Full-dataset balanced    :  0.9012
+
+Confusion matrix  (rows=actual, cols=predicted)
+----------------------------------------
+             PRED real   PRED screen
+  ACT real          84            6
+  ACT screen        11           73
+
+  True  Negative (real  → real  ): 84
+  False Positive (real  → screen): 6
+  False Negative (screen→ real  ): 11
+  True  Positive (screen→ screen): 73
+
+  Precision : 0.9241
+  Recall    : 0.8690
+  F1        : 0.8957
+============================================================

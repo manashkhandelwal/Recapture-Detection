@@ -1,0 +1,14 @@
+{
+  "weights": {
+    "fft_peaks": 0.7409111857414246,
+    "screen_luminance": 0.0,
+    "color_gamut": 0.03042428568005562,
+    "channel_decorrelation": 0.0,
+    "halftone": 0.0654788538813591,
+    "glare_blob": 0.0,
+    "double_compression": 0.010259016416966915,
+    "edge_density": 0.15292663872241974
+  },
+  "threshold": 0.44999999999999996,
+  "cv_score": 0.9012254901960783
+}
