@@ -6,7 +6,7 @@ It operates completely on-device using OpenCV, NumPy, and SciPy. It requires no 
 
 ## Live Demo
 Check out the live Streamlit application here: 
-👉 **[Insert Streamlit App Link Here]**
+👉 **[[Insert Streamlit App Link Here](https://recapture-detection.streamlit.app/)]**
 
 ## Installation & Requirements
 
